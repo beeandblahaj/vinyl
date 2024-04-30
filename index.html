@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vinyl</title>
+</head>
+<body>
+    <script src="app.js"></script>
+    <div class="all">
+
+        <div class="half">
+
+            <div class="song-card">
+                <div class="disk"><div class="center"></div></div>
+                <div class="bar"><div class="filled"></div></div>
+                <br>
+                <div class="info">
+
+                    <h2 id="song-title">Song Title</h2>
+                    <p id="artist">Artist</p>
+
+                </div>
+                <div class="heart"><p>❤</p></div>
+            </div>
+
+        </div>
+
+        <div class="half">
+
+            <div class="input">
+                <form action="" id="cardForm">
+
+                    <h2>Customize Text</h2>
+                    <input type="text" id="songTitle" placeholder="Default Song Name">
+                    <input type="text" id="artistName" placeholder="Default Artist Name">
+                    <br>
+                    <h2>Vinyl Color</h2>
+                    <div class="selector">
+
+                        <button style="background-color: #ff6666" onclick="red()"></button>
+                        <button style="background-color: #ffad4f" onclick="orange()"></button>
+                        <button style="background-color: #ffea64" onclick="yellow()"></button>
+                        <button style="background-color: #d0ffa9" onclick="green1()"></button>
+                        <button style="background-color: #75ffb1" onclick="green2()"></button>
+                        <button style="background-color: #8df1ed" onclick="blue1()"></button>
+                        <button style="background-color: #55c5e1" onclick="blue2()"></button>
+                        <button style="background-color: #5d74dc" onclick="blue3()"></button>
+                        <button style="background-color: #b23ce5" onclick="purple1()"></button>
+                        <button style="background-color: #ee8cff" onclick="purple2()"></button>
+                        <button style="background-color: #ffcfed" onclick="pink1()"></button>
+                        <button style="background-color: #ff4ea4" onclick="pink2()"></button>
+
+                    </div>
+                    <br>
+                    <button type="submit">Create</button>
+
+                </form>
+            </div>     
+
+        </div>
+
+    </div>
+</body>
+</html>

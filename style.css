@@ -1,0 +1,199 @@
+:root {
+
+    --disk-color-center: #d0ffa9;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+
+}
+
+h1 { font-size: 48px; }
+h2 {font-size: 24px;}
+p {font-size: 18px;}
+b {font-size: 18px;}
+
+input {
+    
+    margin: 2vh auto;
+    background-color: #eeeeee;
+    min-height: 28px;
+    width: 256px;
+    border: none;
+    padding: 2vh;
+    border-radius: 5vh;
+
+}
+
+@keyframes spin {
+
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+
+}
+
+@keyframes play {
+
+    0% {width: 0%;}
+    100% {width: 100%;}
+
+}
+
+.all {
+
+    margin: 10vh auto;
+    text-align: center;
+
+}
+
+.half {
+
+    margin: auto;
+    vertical-align: top;
+    width: 30%;
+    display: inline-block;
+}
+
+.song-card {
+
+    background-color: #ffffff;
+    box-shadow: #eeeeee 0 0 24px;
+    width: 300px;
+    height: 450px;
+    padding: 5vh;
+    border-radius: 5vh;
+
+}
+
+.disk {
+
+    margin: auto;
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 5vh;
+    background-color: #555555;
+    border-radius: 150px;
+    padding: 82.5px;
+    background-image: conic-gradient(transparent 0deg, transparent 40deg, #ffffff11 40deg,
+    #ffffff11 50deg, transparent 50deg, transparent 220deg, #ffffff11 220deg,
+    #ffffff11 230deg, transparent 230deg);
+    animation: infinite spin 3s linear;
+
+}
+
+.center {
+    
+    margin: auto;
+    width: 135px;
+    height: 135px;
+    border-radius: 67.5px;
+    background-color: var(--disk-color-center);
+    background-image: radial-gradient(#555555 15%, transparent 15%);
+
+}
+
+.bar {
+
+    height: 1.5vh;
+    width: 80%;
+    margin: auto;
+    border-radius: 1vh;
+    background-color: #eeeeee;
+
+}
+
+.filled {
+
+    height: 1.5vh;
+    background-color: var(--disk-color-center);
+    width: 0%;
+    border-radius: 1vh;
+    animation: infinite play 30s linear;
+
+}
+
+.info {
+
+    text-align: left;
+
+}
+
+.heart {
+
+    position: relative;
+    left: 125px;
+    bottom: 75px;
+
+}
+
+.heart p {
+
+    font-size: 48px;
+    color: #eeeeee;
+    transition: color 0.2s;
+
+}
+
+.heart p:hover {
+
+    color: var(--disk-color-center);
+    cursor: pointer;
+
+}
+
+.input {
+
+    margin: auto;
+    text-align: center;
+
+}
+
+.input button {
+
+    border: none;
+    background-color: var(--disk-color-center);
+    padding: 1vi;
+    border-radius: 2vi;
+    font-weight: bold;
+
+}
+
+.input button:hover {
+
+    cursor: pointer;
+
+}
+
+.selector {
+
+    width: 300px;
+    min-height: 196px;
+    margin: 1vi auto;
+    background-color: #ffffff;
+    padding: 1vi;
+    box-shadow: #eeeeee 0px 0px 24px;
+    border-radius: 25px;
+
+}
+
+.selector button {
+
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0.5vi;
+    border: none;
+    border-radius: 25px;
+
+}
+
+.selector button:hover {
+
+    cursor: pointer;
+
+}
